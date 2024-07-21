@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tavu.dk</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="popup1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span class="brand">Tavu.dk</span></a>
+            <a class="navbar-brand" href="#"><span class="brand">Tavu</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Om Os</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
-                    </li>
-                </ul>
                 <div class="d-flex align-items-center ms-auto language-container">
                     <div class="dropdown me-2">
                         <a class="nav-link" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,100 +32,212 @@
                             <li><a class="dropdown-item" href="#" data-lang="en"><img src="/billeder/ukflag.png" alt="UK Flag" class="flag-icon"> Engelsk</a></li>
                         </ul>
                     </div>
-                    <button class="btn btn-success me-2">Login</button>
-                    <button class="btn btn-success me-2">Register</button>
+                    <button class="btn custom-button me-2 btn-login">Login</button>
+                    <button class="btn custom-button me-2 btn-register">Registrer</button>
                 </div>
             </div>
         </div>
     </nav>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
+
+    <div class="container my-5">
         <div class="row">
-            <div class="col">
-                <h5>Om Os</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Privatlivspolitik</a></li>
-                </ul>
+            <div class="col text-center">
+                <h1 class="display-4">Velkommen til Tavu.dk</h1>
+                <p class="lead">Din pålidelige partner.</p>
             </div>
-            <div class="col">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Oprydning</a></li>
-                    <li><a href="#">Rengøring</a></li>
-                    <li><a href="#">Handyman</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <h5>Følg Os</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
-                    <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="text-center py-3">
-            <p>&copy; 2024 Tavu.dk. Alle rettigheder forbeholdes.</p>
         </div>
     </div>
-</footer>
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Om Os</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#omOsDropdown" aria-expanded="false">
+                                Om Os <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="omOsDropdown">
+                                <ul class="list-unstyled ps-3">
+                                    <li><a href="#">Kontakt</a></li>
+                                    <li><a href="#">Privatlivspolitik</a></li>
+                                    <li><a href="#">Vores Team</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Tjenester</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#tjenesterDropdown" aria-expanded="false">
+                                Tjenester <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="tjenesterDropdown">
+                                <ul class="list-unstyled ps-3">
+                                    <li><a href="#">Oprydning</a></li>
+                                    <li><a href="#">Rengøring</a></li>
+                                    <li><a href="#">Handyman</a></li>
+                                    <li><a href="#">Specialopgaver</a></li>
+                                    <li><a href="#">Vedligeholdelse</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#supportDropdown" aria-expanded="false">
+                                Support <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <div class="collapse" id="supportDropdown">
+                                <ul class="list-unstyled ps-3">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Kontakt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Følg Os</h5>
+                    <ul class="list-unstyled social-links">
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center py-3position-relative">
+                <div class="loader-container">
+                    <div id="loaderAnimation" class="loader hidden"></div>
+                </div>
+                <p>&copy; 2024 Tavu.dk. Alle rettigheder forbeholdes.</p>
+            </div>
+        </div>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts.js"></script>
+        
+    <div id="auth-container"></div>
+
+    <div class="overlay">
+        <div class="popup-box">
+            <button class="close-btn">&times;</button>
+            <div class="form-container login-container active">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-username">Brugernavn</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" id="login-username" class="form-control" placeholder="Indtast brugernavn">
+                        </div>
+                        <div class="error-message" id="login-username-error">Brugernavn er påkrævet</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Adgangskode</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" id="login-password" class="form-control" placeholder="Indtast adgangskode">
+                        </div>
+                        <div class="error-message" id="login-password-error">Adgangskode er påkrævet</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <p>Har du ikke en konto? <a href="#" class="toggle-btn link">Registrer</a></p>
+                </form>
+            </div>
+            <div class="form-container register-container">
+                <h2>Registrer</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-username">Brugernavn</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" id="register-username" class="form-control" placeholder="Indtast brugernavn">
+                        </div>
+                        <div class="error-message" id="register-username-error">Brugernavn er påkrævet</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">E-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <input type="email" id="register-email" class="form-control" placeholder="Indtast e-mail">
+                        </div>
+                        <div class="error-message" id="register-email-error">Ugyldig e-mail</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Adgangskode</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" id="register-password" class="form-control" placeholder="Indtast adgangskode">
+                        </div>
+                        <div class="error-message" id="register-password-error">Adgangskode er påkrævet</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password-confirm">Bekræft adgangskode</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            </div>
+                            <input type="password" id="register-password-confirm" class="form-control" placeholder="Bekræft adgangskode">
+                        </div>
+                        <div class="error-message" id="register-password-confirm-error">Adgangskoderne matcher ikke</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-phone">Telefonnummer</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                <span class="input-group-text country-code">+</span>
+                                <input type="text" id="register-country-code" class="form-control country-code-input" value="0" maxlength="4" aria-label="Country Code">
+                            </div>
+                            <input type="tel" id="register-phone-number" class="form-control phone-number" placeholder="Nummer" aria-label="Nummer" disabled>
+                        </div>
+                        <div class="error-message" id="register-phone-error">Ugyldigt telefonnummer</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-captcha">Captcha placeholder</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-puzzle-piece"></i></span>
+                            </div>
+                            <input type="text" id="register-captcha" class="form-control" placeholder="Captcha">
+                        </div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="register-privacy">
+                        <label class="form-check-label" for="register-privacy">Accepter privat politik</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrer</button>
+                    <p>Har du allerede en konto? <a href="#" class="toggle-btn">Login</a></p>
+                    <p>Registrer som <a href="#">firma</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="loading.js"></script>
+    <script src="auth.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </body>
 </html>
